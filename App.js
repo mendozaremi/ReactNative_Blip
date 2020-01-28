@@ -10,6 +10,9 @@ import * as ImagePicker from 'expo-image-picker';
 import Constants from 'expo-constants';
 import * as Permissions from 'expo-permissions';
 
+// disables yellow warning signs
+console.disableYellowBox = true;
+
 class HomeScreen extends Component {
   render() {
     return (
@@ -108,6 +111,7 @@ class NewYork extends Component {
       longitudeDelta: 0.0421
     },
   };
+
 
   componentWillMount() {
     this.index = 0;
