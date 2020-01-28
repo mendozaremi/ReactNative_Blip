@@ -655,7 +655,6 @@ class Greece extends Component {
       });
       return { scale, opacity };
     });
-
     return (
       <View style={styles4.container}>
         <MapView
