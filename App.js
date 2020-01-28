@@ -864,12 +864,12 @@ class Map extends Component {
           ><Image source={require('./cameraLogo.png')}/>
         </TouchableOpacity>
 
-        <TouchableOpacity
+        {/* <TouchableOpacity
           onPress={()=> {
             this.props.navigation.navigate('cameraRoll')
           }}
           ><Text>UPLOAD</Text>
-        </TouchableOpacity>
+        </TouchableOpacity> */}
 
         </MapView>
       );
