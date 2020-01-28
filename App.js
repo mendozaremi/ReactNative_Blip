@@ -36,6 +36,13 @@ class HomeScreen extends Component {
           }}
           ><Text>C U B A</Text>
         </TouchableOpacity>
+        <TouchableOpacity
+          style={styles.button}
+          onPress={()=> {
+            this.props.navigation.navigate('Greece')
+          }}
+          ><Text>G R E E C E</Text>
+        </TouchableOpacity>
       </View>
     );
   }
@@ -323,7 +330,7 @@ class Cuba extends Component {
       },
       {
         coordinate: {
-          latitude: 21.522100,
+          latitude: 21.00000,
           longitude: -77.781100,
         },
         title: "Barrio De Arte",
@@ -332,8 +339,8 @@ class Cuba extends Component {
       },
       {
         coordinate: {
-          latitude: 21.522700,
-          longitude: -77.81400,
+          latitude: 21.525000,
+          longitude: -79.81400,
         },
         title: "Cuba Car Rows",
         description: "Street Photography Blip",
@@ -541,10 +548,10 @@ const styles3 = StyleSheet.create({
 // ===========================================================================================
 // ================================== G R E E C E=============================================
 const GreeceImages = [
-  { uri: "https://i.imgur.com/VMwRLyB.jpg" },
-  { uri: "https://i.imgur.com/mgTZeVX.jpg" },
-  { uri: "https://i.imgur.com/9F5gac3.jpg" },
-  { uri: "https://i.imgur.com/ILsFZYc.jpg" }
+  { uri: "https://i.imgur.com/o1TaN3e.jpg" },
+  { uri: "https://i.imgur.com/5xzW9gV.jpg" },
+  { uri: "https://i.imgur.com/Abcleun.jpg" },
+  { uri: "https://i.imgur.com/vALHz0f.jpg" }
 ]
 
 class Greece extends Component {
@@ -552,38 +559,38 @@ class Greece extends Component {
     markers: [
       {
         coordinate: {
-          latitude: 21.521800,
-          longitude: -77.781200,
+          latitude: 37.103600,
+          longitude: 25.377700,
         },
-        title: "Cuba Building",
-        description: "Street Photography Blip",
+        title: "Mykonos Steps",
+        description: "Vacation Blip",
         image: GreeceImages[0],
       },
       {
         coordinate: {
-          latitude: 21.922000,
-          longitude: -78.081400,
+          latitude: 37.9838,
+          longitude: 23.7275,
         },
-        title: "Fast & Furious Scene",
-        description: "Famous Blip",
+        title: "Santaroni Alley",
+        description: "Vacation Blip",
         image: GreeceImages[1],
       },
       {
         coordinate: {
-          latitude: 21.522100,
-          longitude: -77.781100,
+          latitude: 36.393200,
+          longitude: 25.461500,
         },
-        title: "Barrio De Arte",
-        description: "Street Photography Blip",
+        title: "Greece shore",
+        description: "Vacation Blip",
         image: GreeceImages[2],
       },
       {
         coordinate: {
-          latitude: 21.522700,
-          longitude: -77.81400,
+          latitude: 37.446700,
+          longitude: 25.328900,
         },
-        title: "Cuba Car Rows",
-        description: "Street Photography Blip",
+        title: "Greece Neighborhood",
+        description: "Vacation Blip",
         image: GreeceImages[3],
       },
     ],
@@ -648,7 +655,6 @@ class Greece extends Component {
       });
       return { scale, opacity };
     });
-
     return (
       <View style={styles4.container}>
         <MapView
